@@ -1,525 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Graph Page - Modern Analytics Dashboard</title>
-    <link rel="stylesheet" href="templatemo-graph-page.css">
-<!-- 
-
-TemplateMo 602 Graph Page
-
-https://templatemo.com/tm-602-graph-page
-
--->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ENERGYWINDS</title>
+  <meta name="description" content="3MW Wind Energy Park in Constanța. Delivering energy for over 15 years and developing more renewable capacity." />
+  <link rel="stylesheet" href="templatemo-graph-page.css" />
 </head>
+
+<style>
+    .logo-icon{
+        width: 150px;              /* container size */
+        height: 44px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        border: 1px solid var(--border);
+    }
+
+    .logo-img{
+        width: 100%;
+        object-fit: contain;      /* keeps logo proportions */
+        padding: 6px;             /* gives breathing room */
+    }
+
+</style>
+
 <body>
-    <!-- Navigation -->
-    <nav id="navbar">
-        <div class="nav-container">
-            <a href="#home" class="logo">
-                <div class="logo-icon">
-                    <svg viewBox="0 0 24 24">
-                        <path d="M3 13h2v8H3zm4-8h2v13H7zm4-2h2v15h-2zm4 4h2v11h-2zm4-2h2v13h-2z"/>
-                    </svg>
-                </div>
-                <span class="logo-text">Graph Page</span>
-            </a>
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#dashboard">Dashboard</a></li>
-                <li><a href="#analytics">Analytics</a></li>
-                <li><a href="#reports">Reports</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <a href="https://www.google.com/search" target="_blank" rel="noopener" title="Search">
-                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="11" cy="11" r="8"></circle>
-                    <path d="m21 21-4.35-4.35"></path>
-                </svg>
-            </a>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <div class="logo-icon" aria-hidden="true">
+            <img class="logo-img" src="images/logo.png" alt="ENERGYWINDS logo">
         </div>
-        <ul class="nav-links-mobile" id="navLinksMobile">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#dashboard">Dashboard</a></li>
-            <li><a href="#analytics">Analytics</a></li>
-            <li><a href="#reports">Reports</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+        <span class="logo-text">ENERGYWINDS</span>
+    </a>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-bg"></div>
-        <div class="geometric-shapes">
-            <div class="shape shape1"></div>
-            <div class="shape shape2"></div>
-            <div class="shape shape3"></div>
-            <div class="shape shape4"></div>
-            <div class="shape shape5"></div>
-            <div class="shape shape6"></div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#dashboard">Project</a></li>
+        <li><a href="#analytics">Performance</a></li>
+        <li><a href="#reports">Development</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <a href="https://www.google.com/search?q=Constanta+wind+energy" target="_blank" rel="noopener" title="Search">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <path d="m21 21-4.35-4.35"></path>
+        </svg>
+      </a>
+
+      <div class="hamburger" id="hamburger" aria-label="Open menu" role="button" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <ul class="nav-links-mobile" id="navLinksMobile">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#dashboard">Project</a></li>
+      <li><a href="#analytics">Performance</a></li>
+      <li><a href="#reports">Development</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="geometric-shapes" aria-hidden="true">
+      <div class="shape shape1"></div>
+      <div class="shape shape2"></div>
+      <div class="shape shape3"></div>
+      <div class="shape shape4"></div>
+      <div class="shape shape5"></div>
+      <div class="shape shape6"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Wind Energy Park<br />Constanța</h1>
+        <p>
+          A wind energy park with <strong>3MW installed power</strong> in Constanța.
+          We’ve been <strong>delivering energy for over 15 years</strong> and we’re actively
+          <strong>developing more</strong> renewable capacity.
+        </p>
+        <a href="#dashboard" class="cta-button">Explore the Project</a>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="city-container">
+          <div class="building building1"><div class="building-fill"></div><div class="building-windows"></div></div>
+          <div class="building building2"><div class="building-fill"></div><div class="building-windows"></div></div>
+          <div class="building building3"><div class="building-fill"></div><div class="building-windows"></div></div>
+          <div class="building building4"><div class="building-fill"></div><div class="building-windows"></div></div>
+          <div class="neon-line neon-line1"></div>
+          <div class="neon-line neon-line2"></div>
         </div>
-        
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>Data Analytics<br>Dashboard</h1>
-                <p>Transform your data into actionable insights with our cutting-edge analytics platform. Real-time monitoring, intelligent predictions, and beautiful visualizations.</p>
-                <a href="#dashboard" class="cta-button">Get Started</a>
-            </div>
-            
-            <div class="hero-visual">
-                <div class="city-container">
-                    <div class="building building1">
-                        <div class="building-fill"></div>
-                        <div class="building-windows"></div>
-                    </div>
-                    <div class="building building2">
-                        <div class="building-fill"></div>
-                        <div class="building-windows"></div>
-                    </div>
-                    <div class="building building3">
-                        <div class="building-fill"></div>
-                        <div class="building-windows"></div>
-                    </div>
-                    <div class="building building4">
-                        <div class="building-fill"></div>
-                        <div class="building-windows"></div>
-                    </div>
-                    <div class="neon-line neon-line1"></div>
-                    <div class="neon-line neon-line2"></div>
-                </div>
-            </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Section (was Dashboard) -->
+  <section class="dashboard-section" id="dashboard">
+    <div class="dashboard-container">
+      <h2 class="section-title">Project Overview</h2>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-header">
+            <div class="stat-icon">⚡</div>
+            <div class="stat-title">Installed Power</div>
+          </div>
+          <div class="stat-value">3MW</div>
+          <div class="stat-description">Total installed capacity of the wind energy park.</div>
+          <div class="stat-chart"><canvas class="mini-chart" id="miniChart1"></canvas></div>
         </div>
-    </section>
 
-    <!-- Dashboard Section -->
-    <section class="dashboard-section" id="dashboard">
-        <div class="dashboard-container">
-            <h2 class="section-title">Dashboard Overview</h2>
-            <!-- Stats Cards -->
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-header">
-                        <div class="stat-icon">📊</div>
-                        <div class="stat-title">Total Revenue</div>
-                    </div>
-                    <div class="stat-value">$42,847</div>
-                    <div class="stat-description">Monthly revenue increased by 23% compared to last month with strong performance across all channels.</div>
-                    <div class="stat-chart">
-                        <canvas class="mini-chart" id="miniChart1"></canvas>
-                    </div>
-                </div>
-
-                <div class="stat-card">
-                    <div class="stat-header">
-                        <div class="stat-icon">👥</div>
-                        <div class="stat-title">Active Users</div>
-                    </div>
-                    <div class="stat-value">18.5K</div>
-                    <div class="stat-description">Real-time analytics showing active users currently engaging with the platform.</div>
-                    <div class="stat-chart">
-                        <canvas class="mini-chart" id="miniChart2"></canvas>
-                    </div>
-                </div>
-
-                <div class="stat-card">
-                    <div class="stat-header">
-                        <div class="stat-icon">🎯</div>
-                        <div class="stat-title">Conversion Rate</div>
-                    </div>
-                    <div class="stat-value">94.3%</div>
-                    <div class="stat-description">Customer satisfaction rate based on recent surveys and feedback analysis.</div>
-                    <div class="stat-chart">
-                        <canvas class="mini-chart" id="miniChart3"></canvas>
-                    </div>
-                </div>
-
-                <div class="stat-card">
-                    <div class="stat-header">
-                        <div class="stat-icon">🚀</div>
-                        <div class="stat-title">Performance Score</div>
-                    </div>
-                    <div class="stat-value">7,392</div>
-                    <div class="stat-description">Overall system performance metrics showing optimal operation across all services.</div>
-                    <div class="stat-chart">
-                        <canvas class="mini-chart" id="miniChart4"></canvas>
-                    </div>
-                </div>
-
-                <div class="stat-card">
-                    <div class="stat-header">
-                        <div class="stat-icon">💰</div>
-                        <div class="stat-title">Monthly Growth</div>
-                    </div>
-                    <div class="stat-value">+28.5%</div>
-                    <div class="stat-description">Consistent month-over-month growth in user acquisition and revenue generation.</div>
-                    <div class="stat-chart">
-                        <canvas class="mini-chart" id="miniChart5"></canvas>
-                    </div>
-                </div>
-
-                <div class="stat-card">
-                    <div class="stat-header">
-                        <div class="stat-icon">⚡</div>
-                        <div class="stat-title">System Uptime</div>
-                    </div>
-                    <div class="stat-value">99.9%</div>
-                    <div class="stat-description">Exceptional reliability with minimal downtime ensuring seamless user experience.</div>
-                    <div class="stat-chart">
-                        <canvas class="mini-chart" id="miniChart6"></canvas>
-                    </div>
-                </div>
-            </div>
+        <div class="stat-card">
+          <div class="stat-header">
+            <div class="stat-icon">🏁</div>
+            <div class="stat-title">Operational Experience</div>
+          </div>
+          <div class="stat-value">15+ Years</div>
+          <div class="stat-description">Delivering energy reliably for over fifteen years.</div>
+          <div class="stat-chart"><canvas class="mini-chart" id="miniChart2"></canvas></div>
         </div>
-    </section>
 
-    <!-- Analytics Section -->
-    <section class="analytics-section" id="analytics">
-        <div class="dashboard-container">
-            <h2 class="section-title">Advanced Analytics</h2>
-            
-            <!-- Key Metrics Overview -->
-            <div class="metrics-grid">
-                <div class="metric-item">
-                    <div class="metric-value">2.4M</div>
-                    <div class="metric-label">Page Views</div>
-                </div>
-                <div class="metric-item">
-                    <div class="metric-value">156K</div>
-                    <div class="metric-label">Unique Visitors</div>
-                </div>
-                <div class="metric-item">
-                    <div class="metric-value">4.2min</div>
-                    <div class="metric-label">Avg Session</div>
-                </div>
-                <div class="metric-item">
-                    <div class="metric-value">68%</div>
-                    <div class="metric-label">Return Rate</div>
-                </div>
-                <div class="metric-item">
-                    <div class="metric-value">89</div>
-                    <div class="metric-label">NPS Score</div>
-                </div>
-                <div class="metric-item">
-                    <div class="metric-value">3.2K</div>
-                    <div class="metric-label">Daily Active</div>
-                </div>
-            </div>
-
-            <!-- Chart Cards -->
-            <div class="charts-grid">
-                <div class="chart-card">
-                    <div class="chart-header">
-                        <h3 class="chart-title">📈 Monthly Trends</h3>
-                        <div class="chart-options">
-                            <span class="chart-option active">2024</span>
-                            <span class="chart-option">2023</span>
-                            <span class="chart-option">2022</span>
-                        </div>
-                    </div>
-                    <div class="chart-container">
-                        <div class="bar-chart" id="barChart">
-                            <div class="bar" style="height: 60%">
-                                <span class="bar-value">120</span>
-                                <span class="bar-label">Jan</span>
-                            </div>
-                            <div class="bar" style="height: 80%">
-                                <span class="bar-value">180</span>
-                                <span class="bar-label">Feb</span>
-                            </div>
-                            <div class="bar" style="height: 45%">
-                                <span class="bar-value">90</span>
-                                <span class="bar-label">Mar</span>
-                            </div>
-                            <div class="bar" style="height: 70%">
-                                <span class="bar-value">140</span>
-                                <span class="bar-label">Apr</span>
-                            </div>
-                            <div class="bar" style="height: 90%">
-                                <span class="bar-value">200</span>
-                                <span class="bar-label">May</span>
-                            </div>
-                            <div class="bar" style="height: 65%">
-                                <span class="bar-value">130</span>
-                                <span class="bar-label">Jun</span>
-                            </div>
-                            <div class="bar" style="height: 75%">
-                                <span class="bar-value">150</span>
-                                <span class="bar-label">Jul</span>
-                            </div>
-                            <div class="bar" style="height: 85%">
-                                <span class="bar-value">170</span>
-                                <span class="bar-label">Aug</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="chart-card">
-                    <div class="chart-header">
-                        <h3 class="chart-title">📊 Growth Analytics</h3>
-                        <div class="chart-options">
-                            <span class="chart-option active">Week</span>
-                            <span class="chart-option">Month</span>
-                            <span class="chart-option">Year</span>
-                        </div>
-                    </div>
-                    <div class="chart-container">
-                        <div class="line-chart">
-                            <svg class="line-chart-svg" viewBox="0 0 500 300">
-                                <defs>
-                                    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                                        <stop offset="0%" style="stop-color:#00ffcc;stop-opacity:0.5" />
-                                        <stop offset="100%" style="stop-color:#00ffcc;stop-opacity:0" />
-                                    </linearGradient>
-                                </defs>
-                                <!-- Grid lines -->
-                                <line x1="0" y1="50" x2="500" y2="50" class="chart-grid-line" />
-                                <line x1="0" y1="100" x2="500" y2="100" class="chart-grid-line" />
-                                <line x1="0" y1="150" x2="500" y2="150" class="chart-grid-line" />
-                                <line x1="0" y1="200" x2="500" y2="200" class="chart-grid-line" />
-                                <line x1="0" y1="250" x2="500" y2="250" class="chart-grid-line" />
-                                
-                                <!-- Area -->
-                                <path d="M 0,200 L 62,180 L 125,150 L 187,170 L 250,120 L 312,140 L 375,100 L 437,130 L 500,110 L 500,300 L 0,300 Z" class="chart-area" />
-                                
-                                <!-- Line -->
-                                <path d="M 0,200 L 62,180 L 125,150 L 187,170 L 250,120 L 312,140 L 375,100 L 437,130 L 500,110" class="chart-line" />
-                                
-                                <!-- Dots -->
-                                <circle cx="0" cy="200" class="chart-dot" />
-                                <circle cx="62" cy="180" class="chart-dot" />
-                                <circle cx="125" cy="150" class="chart-dot" />
-                                <circle cx="187" cy="170" class="chart-dot" />
-                                <circle cx="250" cy="120" class="chart-dot" />
-                                <circle cx="312" cy="140" class="chart-dot" />
-                                <circle cx="375" cy="100" class="chart-dot" />
-                                <circle cx="437" cy="130" class="chart-dot" />
-                                <circle cx="500" cy="110" class="chart-dot" />
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="chart-card">
-                    <div class="chart-header">
-                        <h3 class="chart-title">🌍 Geographic Distribution</h3>
-                        <div class="chart-options">
-                            <span class="chart-option active">Global</span>
-                            <span class="chart-option">US</span>
-                            <span class="chart-option">EU</span>
-                        </div>
-                    </div>
-                    <div class="chart-container">
-                        <div class="bar-chart">
-                            <div class="bar" style="height: 85%; background: linear-gradient(180deg, #ff6b6b 0%, #ff8e53 100%);">
-                                <span class="bar-value">42%</span>
-                                <span class="bar-label">USA</span>
-                            </div>
-                            <div class="bar" style="height: 65%; background: linear-gradient(180deg, #4ecdc4 0%, #44a08d 100%);">
-                                <span class="bar-value">28%</span>
-                                <span class="bar-label">EU</span>
-                            </div>
-                            <div class="bar" style="height: 45%; background: linear-gradient(180deg, #45b7d1 0%, #96c93d 100%);">
-                                <span class="bar-value">18%</span>
-                                <span class="bar-label">Asia</span>
-                            </div>
-                            <div class="bar" style="height: 25%; background: linear-gradient(180deg, #f093fb 0%, #f5576c 100%);">
-                                <span class="bar-value">12%</span>
-                                <span class="bar-label">Other</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="chart-card">
-                    <div class="chart-header">
-                        <h3 class="chart-title">📱 Device Analytics</h3>
-                        <div class="chart-options">
-                            <span class="chart-option active">This Month</span>
-                            <span class="chart-option">Last Month</span>
-                            <span class="chart-option">YTD</span>
-                        </div>
-                    </div>
-                    <div class="chart-container">
-                        <div class="line-chart">
-                            <svg class="line-chart-svg" viewBox="0 0 500 300">
-                                <defs>
-                                    <linearGradient id="gradient2" x1="0%" y1="0%" x2="0%" y2="100%">
-                                        <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:0.5" />
-                                        <stop offset="100%" style="stop-color:#ff6b6b;stop-opacity:0" />
-                                    </linearGradient>
-                                </defs>
-                                <!-- Grid lines -->
-                                <line x1="0" y1="60" x2="500" y2="60" class="chart-grid-line" />
-                                <line x1="0" y1="120" x2="500" y2="120" class="chart-grid-line" />
-                                <line x1="0" y1="180" x2="500" y2="180" class="chart-grid-line" />
-                                <line x1="0" y1="240" x2="500" y2="240" class="chart-grid-line" />
-                                
-                                <!-- Mobile Line -->
-                                <path d="M 0,180 L 71,160 L 142,140 L 214,120 L 285,100 L 357,90 L 428,80 L 500,70" stroke="#ff6b6b" stroke-width="2" fill="none" filter="drop-shadow(0 0 10px rgba(255, 107, 107, 0.5))"/>
-                                
-                                <!-- Desktop Line -->
-                                <path d="M 0,220 L 71,210 L 142,200 L 214,190 L 285,185 L 357,180 L 428,175 L 500,170" stroke="#00ffcc" stroke-width="2" fill="none" filter="drop-shadow(0 0 10px rgba(0, 255, 204, 0.5))"/>
-                                
-                                <!-- Mobile dots -->
-                                <circle cx="0" cy="180" r="4" fill="#ff6b6b" />
-                                <circle cx="71" cy="160" r="4" fill="#ff6b6b" />
-                                <circle cx="142" cy="140" r="4" fill="#ff6b6b" />
-                                <circle cx="214" cy="120" r="4" fill="#ff6b6b" />
-                                <circle cx="285" cy="100" r="4" fill="#ff6b6b" />
-                                <circle cx="357" cy="90" r="4" fill="#ff6b6b" />
-                                <circle cx="428" cy="80" r="4" fill="#ff6b6b" />
-                                <circle cx="500" cy="70" r="4" fill="#ff6b6b" />
-                                
-                                <!-- Desktop dots -->
-                                <circle cx="0" cy="220" r="4" fill="#00ffcc" />
-                                <circle cx="71" cy="210" r="4" fill="#00ffcc" />
-                                <circle cx="142" cy="200" r="4" fill="#00ffcc" />
-                                <circle cx="214" cy="190" r="4" fill="#00ffcc" />
-                                <circle cx="285" cy="185" r="4" fill="#00ffcc" />
-                                <circle cx="357" cy="180" r="4" fill="#00ffcc" />
-                                <circle cx="428" cy="175" r="4" fill="#00ffcc" />
-                                <circle cx="500" cy="170" r="4" fill="#00ffcc" />
-                                
-                                <!-- Labels -->
-                                <text x="20" y="50" fill="#ff6b6b" font-size="12">Mobile</text>
-                                <text x="20" y="35" fill="#00ffcc" font-size="12">Desktop</text>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="stat-card">
+          <div class="stat-header">
+            <div class="stat-icon">🌬️</div>
+            <div class="stat-title">Project Type</div>
+          </div>
+          <div class="stat-value">Wind</div>
+          <div class="stat-description">Renewable energy generation from wind resources.</div>
+          <div class="stat-chart"><canvas class="mini-chart" id="miniChart3"></canvas></div>
         </div>
-    </section>
 
-    <!-- Reports Section -->
-    <section class="reports-section" id="reports">
-        <div class="dashboard-container">
-            <h2 class="section-title">Reports & Insights</h2>
-            <div class="info-grid">
-                <div class="info-card">
-                    <div class="info-icon">💼</div>
-                    <h3 class="info-title">Business Intelligence</h3>
-                    <div class="info-value">98.5%</div>
-                    <p style="font-size: 14px; color: #a0a0a0;">Accuracy in predictive analytics and business forecasting models.</p>
-                </div>
-                <div class="info-card">
-                    <div class="info-icon">📱</div>
-                    <h3 class="info-title">Mobile Analytics</h3>
-                    <div class="info-value">2.4M</div>
-                    <p style="font-size: 14px; color: #a0a0a0;">Mobile app downloads and active user engagement metrics.</p>
-                </div>
-                <div class="info-card">
-                    <div class="info-icon">🌍</div>
-                    <h3 class="info-title">Global Reach</h3>
-                    <div class="info-value">150+</div>
-                    <p style="font-size: 14px; color: #a0a0a0;">Countries actively using our analytics platform worldwide.</p>
-                </div>
-                <div class="info-card">
-                    <div class="info-icon">🚀</div>
-                    <h3 class="info-title">Performance Index</h3>
-                    <div class="info-value">847</div>
-                    <p style="font-size: 14px; color: #a0a0a0;">Comprehensive performance scoring across all platform metrics.</p>
-                </div>
-                <div class="info-card">
-                    <div class="info-icon">⚡</div>
-                    <h3 class="info-title">Response Time</h3>
-                    <div class="info-value">0.2s</div>
-                    <p style="font-size: 14px; color: #a0a0a0;">Average API response time ensuring optimal user experience.</p>
-                </div>
-                <div class="info-card">
-                    <div class="info-icon">📊</div>
-                    <h3 class="info-title">Data Processing</h3>
-                    <div class="info-value">12TB</div>
-                    <p style="font-size: 14px; color: #a0a0a0;">Daily data volume processed through our analytics pipeline.</p>
-                </div>
+        <div class="stat-card">
+          <div class="stat-header">
+            <div class="stat-icon">📍</div>
+            <div class="stat-title">Location</div>
+          </div>
+          <div class="stat-value">Constanța</div>
+          <div class="stat-description">Constanța County, Romania.</div>
+          <div class="stat-chart"><canvas class="mini-chart" id="miniChart4"></canvas></div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-header">
+            <div class="stat-icon">🧩</div>
+            <div class="stat-title">Development Pipeline</div>
+          </div>
+          <div class="stat-value">Expanding</div>
+          <div class="stat-description">Actively developing additional renewable capacity.</div>
+          <div class="stat-chart"><canvas class="mini-chart" id="miniChart5"></canvas></div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-header">
+            <div class="stat-icon">🔋</div>
+            <div class="stat-title">Energy Delivery</div>
+          </div>
+          <div class="stat-value">Ongoing</div>
+          <div class="stat-description">Stable delivery of energy to support local demand.</div>
+          <div class="stat-chart"><canvas class="mini-chart" id="miniChart6"></canvas></div>
+        </div>
+      </div>
+
+      <div class="note-card">
+        <h3>Office Address</h3>
+        <p>
+          Constanța County, Constanța Municipality, Timis Street, No. 480, Room 3
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Performance Section (was Analytics) -->
+  <section class="analytics-section" id="analytics">
+    <div class="dashboard-container">
+      <h2 class="section-title">Performance Highlights</h2>
+
+      <div class="metrics-grid">
+        <div class="metric-item">
+          <div class="metric-value">3MW</div>
+          <div class="metric-label">Installed Capacity</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-value">15+</div>
+          <div class="metric-label">Years in Operation</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-value">Wind</div>
+          <div class="metric-label">Renewable Source</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-value">Constanța</div>
+          <div class="metric-label">County</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-value">Active</div>
+          <div class="metric-label">Energy Delivery</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-value">Growing</div>
+          <div class="metric-label">New Developments</div>
+        </div>
+      </div>
+
+      <!-- <div class="charts-grid">
+        <div class="chart-card">
+          <div class="chart-header">
+            <h3 class="chart-title">📈 Indicative Output Profile</h3>
+            <div class="chart-options">
+              <span class="chart-option active">Year</span>
+              <span class="chart-option">Month</span>
+              <span class="chart-option">Week</span>
             </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact-section" id="contact">
-        <div class="dashboard-container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-grid">
-                <!-- Contact Form -->
-                <div class="contact-form">
-                    <h3 style="margin-bottom: 30px; font-size: 24px;">Send us a Message</h3>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" required placeholder="Tell us how we can help you..."></textarea>
-                        </div>
-                        <button type="submit" class="cta-button" style="width: 100%;">Send Message</button>
-                    </form>
-                </div>
-
-                <!-- Contact Info -->
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    
-                    <a href="mailto:hello@graphpage.com" class="contact-item" style="text-decoration: none; color: inherit;">
-                        <div class="contact-icon">📧</div>
-                        <div class="contact-details">
-                            <h4>Email Address</h4>
-                            <p>hello@graphpage.com<br>support@graphpage.com</p>
-                        </div>
-                    </a>
-
-                    <a href="tel:+15551234567" class="contact-item" style="text-decoration: none; color: inherit;">
-                        <div class="contact-icon">📞</div>
-                        <div class="contact-details">
-                            <h4>Phone Number</h4>
-                            <p>+1 (555) 123-4567<br>Available 24/7</p>
-                        </div>
-                    </a>
-
-                    <a href="https://maps.google.com/?q=123+Data+Drive+Suite+100+Analytics+City" target="_blank" rel="noopener" class="contact-item" style="text-decoration: none; color: inherit;">
-                        <div class="contact-icon">📍</div>
-                        <div class="contact-details">
-                            <h4>Office Location</h4>
-                            <p>123 Data Drive, Suite 100<br>Analytics City, AC 12345</p>
-                        </div>
-                    </a>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">🕒</div>
-                        <div class="contact-details">
-                            <h4>Business Hours</h4>
-                            <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Weekend: Emergency support only</p>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="chart-container">
+            <div class="bar-chart" id="barChart">
+              <div class="bar" style="height: 60%"><span class="bar-value">60</span><span class="bar-label">Jan</span></div>
+              <div class="bar" style="height: 70%"><span class="bar-value">70</span><span class="bar-label">Feb</span></div>
+              <div class="bar" style="height: 65%"><span class="bar-value">65</span><span class="bar-label">Mar</span></div>
+              <div class="bar" style="height: 75%"><span class="bar-value">75</span><span class="bar-label">Apr</span></div>
+              <div class="bar" style="height: 90%"><span class="bar-value">90</span><span class="bar-label">May</span></div>
+              <div class="bar" style="height: 65%"><span class="bar-value">65</span><span class="bar-label">Jun</span></div>
+              <div class="bar" style="height: 75%"><span class="bar-value">75</span><span class="bar-label">Jul</span></div>
+              <div class="bar" style="height: 85%"><span class="bar-value">85</span><span class="bar-label">Aug</span></div>
             </div>
+            <p class="chart-footnote">*Illustrative profile for presentation purposes.</p>
+          </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <p class="copyright">© 2026 Graph Page. All rights reserved. Transforming data into insights. 
-            | Designed by <a href="https://templatemo.com" rel="nofollow noopener" target="_blank">TemplateMo</a></p>
+        <div class="chart-card">
+          <div class="chart-header">
+            <h3 class="chart-title">🌬️ Reliability & Operations</h3>
+            <div class="chart-options">
+              <span class="chart-option active">Operational</span>
+              <span class="chart-option">Maintenance</span>
+              <span class="chart-option">Planning</span>
+            </div>
+          </div>
+          <div class="chart-container">
+            <div class="line-chart">
+              <svg class="line-chart-svg" viewBox="0 0 500 300">
+                <defs>
+                  <linearGradient id="gradientOps" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:#00ffcc;stop-opacity:0.35" />
+                    <stop offset="100%" style="stop-color:#00ffcc;stop-opacity:0" />
+                  </linearGradient>
+                </defs>
+
+                <line x1="0" y1="60" x2="500" y2="60" class="chart-grid-line" />
+                <line x1="0" y1="120" x2="500" y2="120" class="chart-grid-line" />
+                <line x1="0" y1="180" x2="500" y2="180" class="chart-grid-line" />
+                <line x1="0" y1="240" x2="500" y2="240" class="chart-grid-line" />
+
+                <path d="M 0,210 L 71,190 L 142,180 L 214,170 L 285,160 L 357,150 L 428,145 L 500,140"
+                      class="chart-line" />
+                <path d="M 0,210 L 71,190 L 142,180 L 214,170 L 285,160 L 357,150 L 428,145 L 500,140 L 500,300 L 0,300 Z"
+                      fill="url(#gradientOps)" />
+
+                <circle cx="0" cy="210" class="chart-dot" />
+                <circle cx="71" cy="190" class="chart-dot" />
+                <circle cx="142" cy="180" class="chart-dot" />
+                <circle cx="214" cy="170" class="chart-dot" />
+                <circle cx="285" cy="160" class="chart-dot" />
+                <circle cx="357" cy="150" class="chart-dot" />
+                <circle cx="428" cy="145" class="chart-dot" />
+                <circle cx="500" cy="140" class="chart-dot" />
+              </svg>
+            </div>
+            <p class="chart-footnote">*Illustrative reliability trend.</p>
+          </div>
         </div>
-    </footer>
+      </div> -->
+    </div>
+  </section>
 
-<script src="templatemo-graph-script.js"></script>
+  <!-- Development Section (was Reports) -->
+  <section class="reports-section" id="reports">
+    <div class="dashboard-container">
+      <h2 class="section-title">Development & Growth</h2>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="info-icon">🏗️</div>
+          <h3 class="info-title">Expansion</h3>
+          <div class="info-value">In Progress</div>
+          <p>Developing additional renewable capacity beyond current operations.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">⚡</div>
+          <h3 class="info-title">Operational Delivery</h3>
+          <div class="info-value">15+ Years</div>
+          <p>Long-term experience delivering electricity from wind generation.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">📍</div>
+          <h3 class="info-title">Local Presence</h3>
+          <div class="info-value">Constanța</div>
+          <p>Office in Constanța municipality, supporting local operations and development.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">🌿</div>
+          <h3 class="info-title">Renewables</h3>
+          <div class="info-value">Wind</div>
+          <p>Clean energy production supporting decarbonization and energy resilience.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">🔧</div>
+          <h3 class="info-title">O&M Focus</h3>
+          <div class="info-value">Active</div>
+          <p>Operational excellence and maintenance planning for stable delivery.</p>
+        </div>
+
+        <!-- <div class="info-card">
+          <div class="info-icon">🤝</div>
+          <h3 class="info-title">Partnerships</h3>
+          <div class="info-value">Open</div>
+          <p>Available for collaboration and inquiries related to development and operations.</p>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="dashboard-container">
+      <h2 class="section-title">Contact</h2>
+
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h3 style="margin-bottom: 30px; font-size: 24px;">Send a Message</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required placeholder="Tell us how we can help you."></textarea>
+            </div>
+            <button type="submit" class="cta-button" style="width: 100%;">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+
+          <!-- Person card with image -->
+          <div class="contact-item contact-person">
+            <div class="contact-icon">📧</div>
+            <div class="contact-details">
+              <h4>Orlin Kalev</h4>
+              <p class="muted">Manager, ELECTRAWINDS CHIMCONSULT S.R.L.</p>
+              <p class="muted">orlin.kalev@gmail.com<br />+359 894 413 679</p>
+            </div>
+          </div>
+
+          <!-- Gmail compose link -->
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=orlin.kalev@gmail.com&su=Inquiry%20-%203MW%20Wind%20Energy%20Park%20(Constan%C8%9Ba)&body=Hello%20Mr.%20Kalev%2C%0A%0AI%E2%80%99m%20reaching%20out%20regarding%20your%203MW%20wind%20energy%20park%20in%20Constan%C8%9Ba.%0A%0AName%3A%0ACompany%3A%0APhone%3A%0AMessage%3A%0A"
+            target="_blank"
+            rel="noopener"
+            class="contact-item"
+            style="text-decoration:none;color:inherit;"
+          >
+            <div class="contact-icon">📧</div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <p>orlin.kalev@gmail.com</p>
+            </div>
+          </a>
+
+          <!-- Phone -->
+          <a href="tel:+359894413679" class="contact-item" style="text-decoration:none;color:inherit;">
+            <div class="contact-icon">📞</div>
+            <div class="contact-details">
+              <h4>Phone</h4>
+              <p>+359 894 413 679</p>
+            </div>
+          </a>
+
+          <!-- Location -->
+          <a
+            href="https://maps.google.com/?q=Constanta%20County%2C%20Constanta%20Municipality%2C%20Timis%20Street%2C%20No.%20480%2C%20Room%203"
+            target="_blank"
+            rel="noopener"
+            class="contact-item"
+            style="text-decoration:none;color:inherit;"
+          >
+            <div class="contact-icon">📍</div>
+            <div class="contact-details">
+              <h4>Office Location</h4>
+              <p>Constanța County, Constanța Municipality<br />Timis Street, No. 480, Room 3</p>
+            </div>
+          </a>
+
+          <!-- <div class="contact-item">
+            <div class="contact-icon">🕒</div>
+            <div class="contact-details">
+              <h4>Business Hours</h4>
+              <p>Monday - Friday: 9:00 - 18:00<br />Weekend: by appointment</p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p class="copyright">
+        © 2026 Constanța Wind Energy Park. All rights reserved.
+        | Designed by <a href="https://templatemo.com" rel="nofollow noopener" target="_blank">TemplateMo</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="templatemo-graph-script.js"></script>
 </body>
 </html>
